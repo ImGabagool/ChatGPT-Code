@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ThirdPersonGame {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    String playerName = "";
+    String verb = "";
+    String noun = "";
+
+    // Get player name
+    System.out.print("Enter your name: ");
+    playerName = scanner.nextLine();
+
+    // Game loop
+    while (true) {
+      // Get verb and noun from player
+      System.out.print("Enter a verb: ");
+      verb = scanner.nextLine();
+      System.out.print("Enter a noun: ");
+      noun = scanner.nextLine();
+
+      // Print action to console
+      System.out.println(playerName + " " + verb + " the " + noun + ".");
+    }
+  }
+}
